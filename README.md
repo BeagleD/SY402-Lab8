@@ -17,3 +17,10 @@ hash
 date/time file was observed
 The final step, your program should run and update the hash information, upon completion it should print out summary information that includes all new files found, any missing files, and any file that was modified.
 Extra Credit Detect that a file was moved, add to your summary section an output that documents where the file is now, and where it was, and the time of the last scan that saw it in the older location.
+
+
+The hash data is stored in a CSV in /tmp and is named 'hashed_values.csv'.
+
+If that files exsists, then running ./hash.py will hash all the files on your file system, compare to what is in hashed_values.csv, and print out the differences. 
+
+If the baseline file does not exist, then running ./hash.py will hash all the files on your file system and save the results in /tmp/hashed_values.csv
